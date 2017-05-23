@@ -7,5 +7,16 @@
     }
   };
 
+  function testNoteWasAddedToTheArray(){
+    var notes = new Notes();
+    var numberOfNotes = notes.list.length
+    notes.addNote("Hello")
+
+    if (notes.list.length === numberOfNotes) {
+      throw new Error("Note was not added to the array");
+    }
+  };
+
   testNotesArrayStartsEmpty();
+  testNoteWasAddedToTheArray();
 })(this);
