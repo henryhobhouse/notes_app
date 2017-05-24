@@ -1,3 +1,1 @@
-// Notes App //
-
-Bertie, Paul, Henry, Alex, Sami and Felipe
+Stop touching the README Bertie
