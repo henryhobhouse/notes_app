@@ -1,0 +1,18 @@
+body {
+  font-family: helvetica, arial, sans-serif
+}
+
+#results {
+  list-style-type: none;
+}
+#results li {
+  margin: 5px;
+}
+
+.pass {
+  color: green;
+}
+
+.fail, .error {
+  color: red;
+}
