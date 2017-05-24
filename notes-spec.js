@@ -14,7 +14,7 @@
     var numberOfNotes = notes.list.length
     notes.addNote("Hello")
 
-    if (notes.list.length <= numberOfNotes) {
+      if (notes.list.length <= numberOfNotes) {
       throw new Error("Note was not added to the array");
     } else {
       console.log("Note was added");
