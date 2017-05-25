@@ -16,9 +16,6 @@ Notes.prototype.addNote = function(string){
     newLink.setAttribute("href", "");
     var displayNoteLink = document.getElementById('displayNoteLink')
     displayNoteLink.append(newLink)
-
-    // if (this.list[i].length < 20) {
-      document.getElementById(`a${i}`).innerHTML = this.list[i].substring(0,20) + '<br>'
-    // }
+    document.getElementById(`a${i}`).innerHTML = this.list[i].substring(0,20) + '<br>'
   }
 }
