@@ -4,8 +4,7 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
-    "http-server": "^0.10.0",
-    "node-http-server": "^6.2.1"
+    "http-server": "^0.10.0"
   },
   "devDependencies": {},
   "scripts": {
