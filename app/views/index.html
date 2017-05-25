@@ -2,20 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-
     <title>TEAM "Insert Name" Awesome Notes app</title>
     <meta name="description" content="basic notes app built without using any framework apart form NodeJS">
     <meta name="author" content="">
-
   </head>
   <body>
-    <form>
-      <input id='box' type='text' /><p>
-      <input id='submitButton' type='submit' /><p>
-    </form>
-    <a id='myNewNoteLink' href=''>My New Note</a><p>
-    <a href='' id='expandNote'>Note</a><p>
-    <div id='note'></div><p>
-    <script src='../js/notes.js'></script>
+    <input type="text" id="box" value="">
+    <button id="Add Note" onclick="note.addNote()">Add Note</button><br>
+    <a id='displayNoteLink'></a>
+    <div id='displayNote'></div>
+    <script src='/js/notes.js'></script>
   </body>
 </html>

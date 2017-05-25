@@ -1,28 +1,24 @@
-linkToExpandNotes();
-createNotes();
+'use strict';
 
-function linkToExpandNotes() {
-  document.getElementById("expandNote");
-  document.addEventListener("click", function(clickEvent) {
-    clickEvent.preventDefault();
-  document
-    .getElementById("note")
-    .innerHTML = "My name is Filipe and I am 28 years old.";
-  });
+var note = new Notes();
+
+function Notes() {
+  console.log("Array Running")
+  this.list = [];
 };
 
-function createNotes() {
-  document.getElementById("box")
-  document.write("My birthday is on the 18th");
-  document.getElementById("submitButton");
-  document.addEventListener("click", function(clickEvent) {
-    clickEvent.preventDefault();
-  })
-  document.getElementById("myNewNoteLink");
-  document.addEventListener("click", function(clickEvent) {
-      clickEvent.preventDefault();
-    })
-    document
-    .getElementById("note")
-    .innerHTML = "My birthday is on the 18th";
-};
+Notes.prototype.addNote = function(string){
+  string = document.getElementById('box').value
+  this.list.push(string)
+  for (var i = 0; i < this.list.length; i++) {
+    var newLink = document.createElement("a")
+    newLink.setAttribute("id", `a${i}`);
+    newLink.setAttribute("href", "");
+    var displayNoteLink = document.getElementById('displayNoteLink')
+    displayNoteLink.append(newLink)
+
+    // if (this.list[i].length < 20) {
+      document.getElementById(`a${i}`).innerHTML = this.list[i].substring(0,20) + '<br>'
+    // }
+  }
+}
