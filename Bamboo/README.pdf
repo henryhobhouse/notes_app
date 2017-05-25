@@ -1,0 +1,23 @@
+Bamboo - AchLaw, Snackmaster, HHH, 'The Edgecase', Pol and Filipe.
+
+Hi there, welcome to the world of Bamboo. Here we will be explaining how to use
+our award-winning software to test-drive your node applications. Please be aware
+that by agreeing to use our software, you are entering into a non-binding
+agreement that prevents the licensing or distribution without our consent.
+Also we absolve ourselves of liability in the event of serious injury or death
+caused as a result of using Bamboo. Finally, please do not use Bamboo in the
+vicinity of Pandas. Thank you, and have a nice day.
+
+
+Tutorial:
+
+Here is an example of a test utilising the .equal method:
+
+exports["The panda eats bamboo"] = function() {
+  expect.equal("Panda", "Panda", 'Does the Panda eat bamboo?');
+};
+
+Where it is written: "The panda eats bamboo", is where you should place your
+'it' statement. After the expect.equal, the first two "Panda" strings represent
+the values that you are comparing. The final message is your summary of the
+test.

@@ -1,0 +1,12 @@
+body { font-family: fantasy;
+background-image: url(http://wallpapercave.com/wp/CSIH4wH.jpg);
+/*background-repeat: no-repeat;*/
+background-size: 100% auto;
+}
+#results { list-style-type: none }
+#results li { margin: 0.2em 0 }
+.pass { color: blue }
+.fail { color: magenta }
+.error { color: black }
+.header { padding: 1em 0; font-weight: bold }
+.trace { font-family: fantasy;; font-size: 100%; white-space: pre; padding: 1em 0 }
