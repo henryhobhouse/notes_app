@@ -1,0 +1,25 @@
+{
+  "name": "notes_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "http-server": "^0.10.0",
+    "node-http-server": "^6.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node /app/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henryhobhouse/notes_app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henryhobhouse/notes_app/issues"
+  },
+  "homepage": "https://github.com/henryhobhouse/notes_app#readme"
+}
