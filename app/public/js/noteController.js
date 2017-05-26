@@ -3,23 +3,29 @@
 document.getElementById('noteButton').addEventListener("click", function() {
   var string = document.getElementById('box').value
   note.addNote(string)
-  showLink();
-  showNote();
+  Showlinks();
 });
 
-function showLink() {
-  var newLink = document.createElement("a");
-  newLink.setAttribute("id", `a${note.list.length}`);
-  newLink.setAttribute("href", `#a${note.list.length}all`);
-  var displayNoteLink = document.getElementById('displayNoteLink');
-  displayNoteLink.append(newLink);
-  document.getElementById(`a${note.list.length}`).innerHTML = note.list[note.list.length-1].substring(0,20) + '<br>';
-};
+function Showlinks() {
 
-function showNote() {
+  var noteSum = note.list.length
+
+  var newLink = document.createElement("a");
+
+  newLink.setAttribute("href", `#a${noteSum}all`);
+
+  var displayNoteLink = document.getElementById('displayNoteLink');
+
+  newLink.innerHTML = note.list[noteSum-1].substring(0,20) + '<br>';
+  displayNoteLink.append(newLink);
+
   var newNote = document.createElement("p");
-  newNote.setAttribute("id", `a${note.list.length}all`);
+
+  newNote.setAttribute("id", `a${noteSum}all`);
+
   var displayNote = document.getElementById('displayNote');
+
+  newNote.innerHTML = note.list[noteSum-1] + '<br>';
   displayNote.append(newNote);
-  document.getElementById(`a${note.list.length}all`).innerHTML = note.list[note.list.length-1] + '<br>';
+
 };
